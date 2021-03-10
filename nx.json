@@ -1,0 +1,25 @@
+{
+  "npmScope": "mfe1",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "shell": {
+      "tags": []
+    },
+    "mfe1": {
+      "tags": []
+    },
+    "auth-lib": {
+      "tags": []
+    }
+  }
+}

@@ -5,7 +5,7 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.base.json'),
-  [/*'@demo/auth-lib'*/]
+  ['@demo/auth-lib']
 );
 
 module.exports = {
@@ -19,11 +19,12 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "mfe1",
-      filename: "remoteEntry.js",
+      filename: "remoteEntry.js", // <-- Metadata of Micro Frontend
       exposes: {
         './Module': './apps/mfe1/src/app/flights/flights.module.ts',
       },
       shared: {
+        // NPM-Packages
         "@angular/core": {
           singleton: true,
           strictVersion: true

@@ -5,7 +5,7 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
     path.join(__dirname, '../../tsconfig.base.json'),
-    [/*'@demo/auth-lib'*/]    
+    ['@demo/auth-lib']    
 );
 
 module.exports = {
@@ -20,6 +20,8 @@ module.exports = {
         new ModuleFederationPlugin({
             remotes: {
                 'mfe1': "mfe1@http://localhost:3000/remoteEntry.js" 
+                //           ^---- Static Federation
+                //              \---- Alternative: Dynamic Federation
             },
             shared: {
                 "@angular/core": {

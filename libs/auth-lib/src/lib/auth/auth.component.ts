@@ -13,12 +13,16 @@ export class AuthComponent {
   userName: string;
   password: string;
 
+  loggedInAs = this.authService.userName;
+
   login(): void {
     this.authService.login(this.userName, this.password);
+    this.loggedInAs = this.userName;
   }
 
   logout(): void {
     this.authService.logout();
+    this.loggedInAs = null;
   }
 
 }

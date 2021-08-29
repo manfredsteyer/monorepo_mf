@@ -24,8 +24,7 @@
               "apps/mfe1/src/assets"
             ],
             "styles": [],
-            "scripts": [],
-            "extraWebpackConfig": "apps/mfe1/webpack.config.js"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -53,8 +52,7 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ],
-              "extraWebpackConfig": "apps/mfe1/webpack.prod.config.js"
+              ]
             }
           }
         },
@@ -62,13 +60,11 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "mfe1:build",
-            "port": 3000,
-            "extraWebpackConfig": "apps/mfe1/webpack.config.js"
+            "port": 3000
           },
           "configurations": {
             "production": {
-              "browserTarget": "mfe1:build:production",
-              "extraWebpackConfig": "apps/mfe1/webpack.prod.config.js"
+              "browserTarget": "mfe1:build:production"
             }
           }
         },
@@ -92,8 +88,7 @@
             "styles": [
               "apps/mfe1/src/styles.css"
             ],
-            "scripts": [],
-            "extraWebpackConfig": "apps/mfe1/webpack.config.js"
+            "scripts": []
           }
         },
         "lint": {
@@ -131,8 +126,7 @@
               "apps/shell/src/assets"
             ],
             "styles": ["apps/shell/src/styles.css"],
-            "scripts": [],
-            "extraWebpackConfig": "apps/shell/webpack.config.js"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -160,8 +154,7 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ],
-              "extraWebpackConfig": "apps/shell/webpack.prod.config.js"
+              ]
             }
           }
         },
@@ -169,13 +162,11 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "shell:build",
-            "port": 5000,
-            "extraWebpackConfig": "apps/shell/webpack.config.js"
+            "port": 5000
           },
           "configurations": {
             "production": {
-              "browserTarget": "shell:build:production",
-              "extraWebpackConfig": "apps/shell/webpack.prod.config.js"
+              "browserTarget": "shell:build:production"
             }
           }
         },
@@ -197,8 +188,7 @@
               "apps/shell/src/assets"
             ],
             "styles": [],
-            "scripts": [],
-            "extraWebpackConfig": "apps/shell/webpack.config.js"
+            "scripts": []
           }
         },
         "lint": {

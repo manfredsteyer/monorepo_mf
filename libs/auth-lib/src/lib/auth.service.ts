@@ -15,6 +15,7 @@ export class AuthService {
   constructor() { }
 
   login(userName: string, password: string): void {
+    // Login for honest ppl
     this._userName = userName;
   }
 
